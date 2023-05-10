@@ -4,17 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Collage|website</title>
   </head>
@@ -64,11 +54,11 @@
             <img src="resources/logo1.png" class="logo w-12" alt="" />
             <span class="font-bold">AKSHAR</span>
           </div>
-          <div class="hidden lg:block">
-            <ul class="inline-flex space-x-8">
+          <nav class="nav hidden lg:block">
+            <ul class="flex space-x-8 flex-col lg:flex-row">
               <li>
                 <a
-                  href="#"
+                  href="index.html"
                   class="text-sm font-semibold text-gray-800 hover:text-gray-900"
                 >
                   Home
@@ -76,16 +66,16 @@
               </li>
               <li>
                 <a
-                  href="#"
+                  href="about.html"
                   class="text-sm font-semibold text-gray-800 hover:text-gray-900"
                 >
                   About
                 </a>
               </li>
-              <li>
+              <li class="nav-drop">
                 <a
                   href="#"
-                  class="text-sm inline-flex font-semibold text-gray-800 hover:text-gray-900"
+                  class="text-sm inline-flex font-semibold text-gray-800 hover:text-gray-900 relative"
                 >
                   Courses
                   <span>
@@ -105,19 +95,47 @@
                     </svg>
                   </span>
                 </a>
+                <ul
+                  class="dropdown-box absolute bg-white text-center rounded-lg py-3 z-20 max-w-xs"
+                >
+                  <li class="py-2 px-2">
+                    <a
+                      href="diplomainpharmacy.html"
+                      class="hover:bg-slate-300 px-6 py-2"
+                    >
+                      Diploma in Pharmacy
+                    </a>
+                  </li>
+                  <li class="py-2 px-2">
+                    <a
+                      href="optometry.html"
+                      class="hover:bg-slate-300 px-6 py-2"
+                    >
+                      Optometry
+                    </a>
+                  </li>
+                  <li class="py-2 px-2">
+                    <a
+                      href="paramedicaldiplomacourses.html"
+                      class="hover:bg-slate-300 px-6 py-2"
+                    >
+                      Paramedical Diploma
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="contact.html"
                   class="text-sm font-semibold text-gray-800 hover:text-gray-900"
                 >
                   Contact
                 </a>
               </li>
             </ul>
-          </div>
+          </nav>
 
-          <div class="lg:hidden">
+          <button class="lg:hidden nav-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -134,7 +152,7 @@
               <line x1="4" y1="6" x2="20" y2="6"></line>
               <line x1="4" y1="18" x2="20" y2="18"></line>
             </svg>
-          </div>
+          </button>
         </div>
       </div>
     </header>
@@ -145,11 +163,14 @@
     <main>
       <!-- Hero section -->
       <section class="hero py-16 bg-base-200">
-        <div class="hero-content flex-col lg:flex-row-reverse">
+        <div
+          class="hero-content flex flex-col lg:flex-row-reverse justify-center items-center"
+        >
           <img
             src="image/heroImage3.jpg"
             class="max-w-xs rounded-lg shadow-2xl"
           />
+
           <div>
             <h1 class="text-5xl font-bold">Learn With Us</h1>
             <p class="py-6 pr-24">
@@ -551,8 +572,9 @@
         </div>
       </div>
     </footer>
-
     <!-- FOOTER SECTION END -->
+
+    <!-- LINK TO LOCAL SCRIPT  -->
     <script src="script.js"></script>
   </body>
 </html>
