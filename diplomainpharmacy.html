@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Roboto:wght@400;500;700;900&family=Rubik:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- local style sheet -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Collage|website</title>
   </head>
@@ -98,9 +106,21 @@
                 </a>
               </li>
             </ul>
+
+            <!-- Hamberger Button -->
+            <div class="md:hidden">
+              <button
+                id="menu-btn"
+                class="z-40 block hamberger md:hidden focus:outline-none"
+              >
+                <span class="hamberger-top"></span>
+                <span class="hamberger-middle"></span>
+                <span class="hamberger-bottom"></span>
+              </button>
+            </div>
           </nav>
 
-          <button class="lg:hidden nav-btn">
+          <!-- <button class="lg:hidden nav-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -117,7 +137,7 @@
               <line x1="4" y1="6" x2="20" y2="6"></line>
               <line x1="4" y1="18" x2="20" y2="18"></line>
             </svg>
-          </button>
+          </button> -->
         </div>
       </div>
     </header>
@@ -254,5 +274,8 @@
       </div>
     </footer>
     <!-- FOOTER SECTION END -->
+
+    <!-- external script src-->
+    <script src="script.js" defer></script>
   </body>
 </html>

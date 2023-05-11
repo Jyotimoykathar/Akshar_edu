@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- Google font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Roboto:wght@400;500;700;900&family=Rubik:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- local style sheet -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Collage|website</title>
   </head>
-  <body>
+  <body class="font-roboto">
     <!-- HEADER SECTION START -->
     <!-- <header class="mx-24">
       <nav class="navbar bg-base-100">
@@ -54,8 +61,8 @@
             <img src="resources/logo1.png" class="logo w-12" alt="" />
             <span class="font-bold">AKSHAR</span>
           </div>
-          <nav class="nav hidden lg:block">
-            <ul class="flex space-x-8 flex-col lg:flex-row">
+          <nav class="nav">
+            <ul class="md:flex space-x-8 hidden lg:flex">
               <li>
                 <a
                   href="index.html"
@@ -133,26 +140,74 @@
                 </a>
               </li>
             </ul>
+
+            <!-- Hamberger Button -->
+            <div class="md:hidden">
+              <button
+                id="menu-btn"
+                type="button"
+                class="z-40 block hamburger md:hidden focus:outline-none"
+              >
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+              </button>
+            </div>
           </nav>
 
-          <button class="lg:hidden nav-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="h-6 w-6 cursor-pointer"
-            >
-              <line x1="4" y1="12" x2="20" y2="12"></line>
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="18" x2="20" y2="18"></line>
-            </svg>
-          </button>
+          <!-- Mobile Menu -->
+          <ul
+            id="menu"
+            class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-zinc-400"
+          >
+            <li><a href="#" class="hover:text-slate-950">Home</a></li>
+            <li><a href="#" class="hover:text-slate-950">About</a></li>
+            <li>
+              <a href="#" class="hover:text-slate-950"
+                >Courses<span class="inline-block dropdown">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="ml-2 h-4 w-4"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg> </span
+              ></a>
+              <ul
+                class="dropdown-box absolute bg-white text-center rounded-lg py-3 z-20 max-w-xs"
+              >
+                <li class="py-2 px-2">
+                  <a
+                    href="diplomainpharmacy.html"
+                    class="hover:bg-slate-300 px-6 py-2"
+                  >
+                    Diploma in Pharmacy
+                  </a>
+                </li>
+                <li class="py-2 px-2">
+                  <a href="optometry.html" class="hover:bg-slate-300 px-6 py-2">
+                    Optometry
+                  </a>
+                </li>
+                <li class="py-2 px-2">
+                  <a
+                    href="paramedicaldiplomacourses.html"
+                    class="hover:bg-slate-300 px-6 py-2"
+                  >
+                    Paramedical Diploma
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="hover:text-slate-950">Contact</a></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -575,6 +630,6 @@
     <!-- FOOTER SECTION END -->
 
     <!-- LINK TO LOCAL SCRIPT  -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

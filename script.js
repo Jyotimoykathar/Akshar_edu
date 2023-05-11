@@ -1,5 +1,10 @@
-const nav = document.querySelector(".nav");
-const navbtn = document.querySelector(".nav-btn");
-navbtn.addEventListener("click", () => {
-  nav.classList.toggle("hidden");
-});
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
+btn.addEventListener("click", navToggle);
+
+function navToggle() {
+  btn.classList.toggle("open");
+  menu.classList.toggle("flex");
+  menu.classList.toggle("hidden");
+}
